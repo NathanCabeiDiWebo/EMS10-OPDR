@@ -78,13 +78,47 @@ for i in range(2):
     print(i)
     print("Hallo")
 #1.2.15
-    def box(lengte,breedte):
-    line = "-" * lengte
-    sides =  "|" + " " * (lengte - 2) + "|"
-    sides -= 2
+def box(breedte, lengte):
+    line = "-" * breedte
+    sides =  "|" + " " * (breedte - 2) + "|"
     print(line)
-    for i in range(breedte):
-        print(sides - 2)
+    for i in range(lengte - 2):
+        print(sides)
     print(line)
     
 box(10,6)
+#1.2.16
+
+#1.2.17
+
+#1.2.18
+"""
+
+"""
+#1.2.19
+def right_justify(s):
+    print(" " * 70 + s)
+    len(s)
+
+right_justify('monty')
+#1.2.20
+def box(s2):
+    w = int(len(s2))
+    print('length of line is:', len(s2))
+    out = "+--" + '-'* w + "--+"
+    middle = '|  ' +  s2 + '  |' 
+    print(out)
+    print(middle)
+    print(out)
+
+box('Hallo Python')
+#1.2.21
+
+#1.2.22
+graankorrels = 1
+totaal = 0
+for veld in range(1, 65):
+    print('veld', veld, ':', graankorrels)
+    totaal = totaal + graankorrels
+    graankorrels = graankorrels * 2
+print('totaal :', totaal)
