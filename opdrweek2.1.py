@@ -8,3 +8,12 @@ def hms(sec):
 
 hms(100000)
 #1.2.2
+def is_schrikkeljaar(jaar):
+    #jaar % 4
+    if(jaar%4 == 0):
+        print(True)
+        if(jaar%100 == 1):
+            print(True)
+    else:
+        print(False)
+#1.2.4
